@@ -72,9 +72,10 @@ class Configuration implements ConfigurationInterface
                     ->end()
                 ->end()
                 ->arrayNode('xml_namespaces')
-                     ->cannotBeEmpty()
-                     ->requiresAtLeastOneElement()
-                    ->prototype('scalar')->end()
+                    ->cannotBeEmpty()
+                    ->requiresAtLeastOneElement()
+                    ->prototype('scalar')
+                    ->end()
                 ->end()
             ->end();
 
